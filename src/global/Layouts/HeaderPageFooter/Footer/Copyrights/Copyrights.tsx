@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { useCompanyData } from './useCompanyData';
 
 import styled from 'styled-components';
@@ -17,7 +17,7 @@ const AppsomeLink = styled.a`
   color: inherit;
 `;
 
-export const Copyrights = () => {
+export const Copyrights: FunctionComponent = () => {
   const { href, companyName } = useCompanyData(`mailto:${process.env.REACT_APP_COPYRIGHT_EMAIL}`, 'Appsome');
 
   return (

@@ -26,6 +26,7 @@ const getRWDData = (): RWDContextData => {
     width: window.innerWidth,
     less: {},
     more: {},
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } as any) as RWDDataType;
 
   BreakpointsKeys.forEach(key => {

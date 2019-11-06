@@ -14,11 +14,11 @@ interface ErrorHandlerClassProps {
 class ErrorHandlerClass extends Component<ErrorHandlerClassProps, ErrorHandlerState> {
   public state = { errorOccurred: false };
 
-  public componentDidCatch() {
+  componentDidCatch(): void {
     this.setState({ errorOccurred: true });
   }
 
-  public render() {
+  render(): ReactNode {
     if (this.state.errorOccurred) {
       setTimeout(() => window.location.reload(), 5000);
     }

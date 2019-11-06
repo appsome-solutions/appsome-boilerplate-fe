@@ -21,7 +21,7 @@ const isLocalhost = Boolean(
 function registerValidSW(
   swUrl: RequestInfo,
   config: { onUpdate: (arg0: ServiceWorkerRegistration) => void; onSuccess: (arg0: ServiceWorkerRegistration) => void }
-) {
+): void {
   if (typeof swUrl === 'string') {
     navigator.serviceWorker
       .register(swUrl)
@@ -67,7 +67,8 @@ function registerValidSW(
   }
 }
 
-function checkValidServiceWorker(swUrl: RequestInfo, config: any) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function checkValidServiceWorker(swUrl: RequestInfo, config: any): void {
   // Check if the service worker can be found. If it can't reload the page.
   fetch(swUrl)
     .then(response => {
@@ -90,7 +91,7 @@ function checkValidServiceWorker(swUrl: RequestInfo, config: any) {
     });
 }
 
-export function unregister() {
+export function unregister(): void {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(registration => {
       registration.unregister();
@@ -98,7 +99,8 @@ export function unregister() {
   }
 }
 
-export function register(config: any) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function register(config: any): void {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
