@@ -17,11 +17,10 @@ const App: FunctionComponent = () => (
       <RWDProvider>
         <Router>
           <HeaderPageFooter>
-            <GlobalStyles>
-              <ErrorHandler>
-                <AppRouter />
-              </ErrorHandler>
-            </GlobalStyles>
+            <GlobalStyles />
+            <ErrorHandler>
+              <AppRouter />
+            </ErrorHandler>
           </HeaderPageFooter>
         </Router>
       </RWDProvider>
