@@ -1,4 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Main description
+
+Cra boilerplate to create frontend react applications.
+
+## Technological stack
+
+- ant-design
+- styled-components
+- typescript
+- cra
+- react
+- react-router
+- apollo with graphql
+- eslint + prettier + husky
+
+## Directories structure
+
+All code is under /src directory
+
+- assets - directory for static assets like .svg icons
+- components - reusable components in the wole application like button
+- global - components that are used once in a whole application to provide some functionality like RWD provider or layout
+- helpers - functions that can be reused in few places in whole application
+- pages - component responsible for given url adress like /home -> Home.tsx component
 
 ## Available Scripts
 
