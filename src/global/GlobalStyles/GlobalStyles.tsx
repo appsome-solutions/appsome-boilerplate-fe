@@ -2,8 +2,6 @@ import { normalize } from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 import { ThemeInterface } from 'typings';
 
-import 'antd/dist/antd.min.css';
-
 export const GlobalStyles = createGlobalStyle<ThemeInterface>`
   ${normalize}
   
