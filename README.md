@@ -13,6 +13,9 @@ Cra boilerplate to create frontend react applications.
 - apollo with graphql
 - eslint + prettier + husky
 
+## TO-DO
+[] upgrade ant-d package version
+
 ## Directories structure
 
 All code is under /src directory
