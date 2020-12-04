@@ -15,6 +15,8 @@ Cra boilerplate to create frontend react applications.
 
 ## TO-DO
 - [ ] upgrade ant-d package version
+- [ ] upgare @types/react to >= 16.9.12
+- [ ] transfer all types to dev dependencies
 
 ## Directories structure
 
