@@ -14,7 +14,7 @@ Cra boilerplate to create frontend react applications.
 - eslint + prettier + husky
 
 ## TO-DO
-[] upgrade ant-d package version
+[ ] upgrade ant-d package version
 
 ## Directories structure
 
