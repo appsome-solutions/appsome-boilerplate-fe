@@ -10,19 +10,22 @@ import { GlobalStyles } from './global/GlobalStyles/GlobalStyles';
 import { ErrorHandler } from './global/ErrorHandler/ErrorHandler';
 import { AppRouter } from './global/AppRouter/AppRouter';
 import { client } from 'global/ApolloClient/ApolloClient';
+import { ReactQuery } from 'global/ReactQuery/ReactQuery';
 
 const App: FunctionComponent = () => (
   <ThemeProvider theme={CoreTheme}>
     <ApolloProvider client={client}>
       <RWDProvider>
-        <Router>
-          <HeaderPageFooter>
-            <GlobalStyles />
-            <ErrorHandler>
-              <AppRouter />
-            </ErrorHandler>
-          </HeaderPageFooter>
-        </Router>
+        <ReactQuery>
+          <Router>
+            <HeaderPageFooter>
+              <GlobalStyles />
+              <ErrorHandler>
+                <AppRouter />
+              </ErrorHandler>
+            </HeaderPageFooter>
+          </Router>
+        </ReactQuery>
       </RWDProvider>
     </ApolloProvider>
   </ThemeProvider>
