@@ -8,15 +8,13 @@ Cra boilerplate to create frontend react applications.
 - styled-components
 - typescript
 - cra
+- axios
 - react
 - react-router
 - apollo with graphql
 - eslint + prettier + husky
 
 ## TO-DO
-- [ ] upgrade ant-d package version
-- [ ] upgare @types/react to >= 16.9.12
-- [ ] transfer all types to dev dependencies
 
 ## Directories structure
 
