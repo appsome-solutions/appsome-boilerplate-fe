@@ -11,6 +11,8 @@ Cra boilerplate to create frontend react applications.
 - axios
 - react
 - react-router
+- react-query (server-state library)
+- redux (client-state library)
 - apollo with graphql
 - eslint + prettier + husky
 
