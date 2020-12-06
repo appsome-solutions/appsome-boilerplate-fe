@@ -11,24 +11,27 @@ import { ErrorHandler } from './global/ErrorHandler/ErrorHandler';
 import { AppRouter } from './global/AppRouter/AppRouter';
 import { client } from 'global/ApolloClient/ApolloClient';
 import { ReactQuery } from 'global/ReactQuery/ReactQuery';
+import { Redux } from 'global/Redux/Redux';
 
 const App: FunctionComponent = () => (
-  <ThemeProvider theme={CoreTheme}>
-    <ApolloProvider client={client}>
-      <RWDProvider>
-        <ReactQuery>
-          <Router>
-            <HeaderPageFooter>
-              <GlobalStyles />
-              <ErrorHandler>
-                <AppRouter />
-              </ErrorHandler>
-            </HeaderPageFooter>
-          </Router>
-        </ReactQuery>
-      </RWDProvider>
-    </ApolloProvider>
-  </ThemeProvider>
+  <Redux>
+    <ThemeProvider theme={CoreTheme}>
+      <ApolloProvider client={client}>
+        <RWDProvider>
+          <ReactQuery>
+            <Router>
+              <HeaderPageFooter>
+                <GlobalStyles />
+                <ErrorHandler>
+                  <AppRouter />
+                </ErrorHandler>
+              </HeaderPageFooter>
+            </Router>
+          </ReactQuery>
+        </RWDProvider>
+      </ApolloProvider>
+    </ThemeProvider>
+  </Redux>
 );
 
 export default App;
