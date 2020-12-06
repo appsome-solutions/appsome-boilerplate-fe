@@ -23,10 +23,11 @@ Cra boilerplate to create frontend react applications.
 All code is under /src directory
 
 - assets - directory for static assets like .svg icons
-- components - reusable components in the wole application like button
-- global - components that are used once in a whole application to provide some functionality like RWD provider or layout
+- components - reusable components in the whole application like button
+- global - components that are used once in a whole application to provide some functionalities like RWD provider or layout
 - helpers - functions that can be reused in few places in whole application
 - pages - component responsible for given url adress like /home -> Home.tsx component
+- services - directory for creating frontend services for managing a backend communication and leave abstraction for changes
 
 ## Available Scripts
 
