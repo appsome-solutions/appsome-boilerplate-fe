@@ -18,6 +18,7 @@ Cra boilerplate to create frontend react applications.
 
 ## TO-DO
 - [] Add redirection url consts
+- [] Typography, z-index to CoreTheme
 
 ## Directories structure
 
