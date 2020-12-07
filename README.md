@@ -17,6 +17,7 @@ Cra boilerplate to create frontend react applications.
 - eslint + prettier + husky
 
 ## TO-DO
+- [] Add redirection url consts
 
 ## Directories structure
 
